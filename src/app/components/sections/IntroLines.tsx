@@ -21,11 +21,34 @@ const IntroLines = () => {
       <Line />
       <Line>
         <div>
+          <span className="text-[#b8bb26]">"""</span>
+        </div>
+      </Line>
+      <Line>
+        <div>
           <span className="text-[#b8bb26]">
-            "hello, my name is{' '}
-            <span className="font-extrabold">joshua tighe</span>"
+            hello, my name is{' '}
+            <span className="font-extrabold">joshua tighe</span>
           </span>
-          ;
+        </div>
+      </Line>
+      <Line>
+        <div>
+          <span className="text-[#b8bb26]">
+            a cs junior from <span className="font-extrabold">ireland 🇮🇪</span>
+          </span>
+        </div>
+      </Line>
+      <Line>
+        <div>
+          <span className="text-[#b8bb26]">
+            studying @ <span className="font-extrabold">notre dame ☘️</span>
+          </span>
+        </div>
+      </Line>
+      <Line>
+        <div>
+          <span className="text-[#b8bb26]">"""</span>;
         </div>
       </Line>
       <Line />

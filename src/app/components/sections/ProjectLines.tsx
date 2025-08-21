@@ -58,6 +58,25 @@ const ProjectLines = () => {
         </span>
       </Line>
       <Line>
+        {'        '}
+        <span className="text-[#b8bb26]">
+          "
+          <Link
+            href="https://github.com/joshuatighe/joshuatighe.dev"
+            target="_blank"
+            className="underline hover:font-extrabold"
+          >
+            this website!
+          </Link>
+          "
+        </span>
+        ,
+        <span className="text-[#928374]">
+          {' '}
+          // built using next.js and tailwind, styled to look like vim
+        </span>
+      </Line>
+      <Line>
         <div>
           {'    '}
           {'}'}
