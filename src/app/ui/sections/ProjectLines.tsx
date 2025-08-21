@@ -11,13 +11,13 @@ const ProjectLines = () => {
           <span className="text-[#fb4934]">portfolio_website</span>() {"{"}
         </div>
       </Line>
-      <Line number={"8"} status={"none"}>
+      <Line number={"8"}>
         <div>
           {"    "}
           ProjectList projects = {"{"}
         </div>
       </Line>
-      <Line number={"8"} status={"none"}>
+      <Line number={"8"}>
         <div>
           {"        "}
           <span className="text-[#b8bb26]">
@@ -38,16 +38,16 @@ const ProjectLines = () => {
           </span>
         </div>
       </Line>
-      <Line number={"8"} status={"none"}>
+      <Line number={"8"}>
         <div>
           {"    "}
           {"}"}
         </div>
       </Line>
-      <Line number={"8"} status={"none"}>
+      <Line number={"8"}>
         <div>{"}"}</div>
       </Line>
-      <Line number={"9"} status={"none"}>
+      <Line number={"9"}>
         <></>
       </Line>
     </>

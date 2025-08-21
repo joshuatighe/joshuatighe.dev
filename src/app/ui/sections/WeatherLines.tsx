@@ -46,7 +46,7 @@ const WeatherLines = () => {
           {dublin.desc}
         </div>
       </Line>
-      <Line number={"11"} status={"none"}>
+      <Line number={"11"}>
         <div className="text-[#928374]">
           // <span className="italic font-extrabold">notre dame:</span>{" "}
           <WeatherIconHandler desc={nd.desc} /> {nd.temp}C, {nd.desc}
