@@ -8,4 +8,4 @@ const BlankLine = () => {
   );
 };
 
-export default BlankLine
+export default BlankLine;
