@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
-import Line from '@/app/ui/Line';
-import WeatherIconHandler from '@/app/ui/sections/WeatherIconHandler';
+import Line from '@/app/components/Line';
+import WeatherIconHandler from '@/app/components/WeatherIconHandler';
 
 const WeatherLines = () => {
   const [dublin, setDublin] = useState({ temp: 0, desc: 'n/a' });
@@ -39,19 +39,20 @@ const WeatherLines = () => {
 
   return (
     <>
-      <Line number={'10'} status={'error'}>
+      <Line status={'error'}>
         <div className="text-[#928374]">
           // <span className="italic font-extrabold">dublin:</span>{' '}
           <WeatherIconHandler desc={dublin.desc} /> {dublin.temp}C,{' '}
           {dublin.desc}
         </div>
       </Line>
-      <Line number={'11'}>
+      <Line>
         <div className="text-[#928374]">
           // <span className="italic font-extrabold">notre dame:</span>{' '}
           <WeatherIconHandler desc={nd.desc} /> {nd.temp}C, {nd.desc}
         </div>
       </Line>
+      <Line />
     </>
   );
 };

@@ -1,23 +1,23 @@
 import Link from 'next/link';
 
-import Line from '@/app/ui/Line';
+import Line from '@/app/components/Line';
 
 const ProjectLines = () => {
   return (
     <>
-      <Line number={'6'} status={'warning'}>
+      <Line status={'warning'}>
         <div>
           and this is my{' '}
           <span className="text-[#fb4934]">portfolio_website</span>() {'{'}
         </div>
       </Line>
-      <Line number={'8'}>
+      <Line>
         <div>
           {'    '}
           ProjectList projects = {'{'}
         </div>
       </Line>
-      <Line number={'8'}>
+      <Line>
         <div>
           {'        '}
           <span className="text-[#b8bb26]">
@@ -38,18 +38,16 @@ const ProjectLines = () => {
           </span>
         </div>
       </Line>
-      <Line number={'8'}>
+      <Line>
         <div>
           {'    '}
           {'}'}
         </div>
       </Line>
-      <Line number={'8'}>
+      <Line>
         <div>{'}'}</div>
       </Line>
-      <Line number={'9'}>
-        <></>
-      </Line>
+      <Line />
     </>
   );
 };

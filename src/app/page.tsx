@@ -4,16 +4,16 @@ import {
   IntroLines,
   ProjectLines,
   WeatherLines,
-} from '@/app/ui/sections';
+} from '@/app/components/sections';
 
 const Home = () => {
   return (
     <>
-      <main className="flex flex-col animate-fade-in">
+      <main className="flex flex-col">
         <IntroLines />
         <ProjectLines />
         <WeatherLines />
-        <BlankLines number={30} />
+        <BlankLines />
       </main>
       <Footer />
     </>
