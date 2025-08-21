@@ -1,4 +1,5 @@
 import Line from '@/app/components/Line';
+import { GiShamrock } from 'react-icons/gi';
 
 const IntroLines = () => {
   return (
@@ -42,7 +43,10 @@ const IntroLines = () => {
       <Line>
         <div>
           <span className="text-[#b8bb26]">
-            studying @ <span className="font-extrabold">notre dame ☘️</span>
+            studying @{' '}
+            <span className="font-extrabold">
+              notre dame <GiShamrock className="inline" />
+            </span>
           </span>
         </div>
       </Line>
