@@ -39,7 +39,7 @@ const WeatherLines = () => {
 
   return (
     <>
-      <Line status={'error'}>
+      <Line>
         <div className="text-[#928374]">
           // <span className="italic font-extrabold">dublin:</span>{' '}
           <WeatherIconHandler desc={dublin.desc} /> {dublin.temp}C,{' '}

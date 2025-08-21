@@ -5,7 +5,7 @@ import Line from '@/app/components/Line';
 const ProjectLines = () => {
   return (
     <>
-      <Line status={'warning'}>
+      <Line>
         <div>
           and this is my{' '}
           <span className="text-[#fb4934]">portfolio_website</span>() {'{'}
@@ -38,7 +38,7 @@ const ProjectLines = () => {
           </span>
         </div>
       </Line>
-      <Line>
+      <Line status="error">
         {'        '}
         <span className="text-[#b8bb26]">
           "
@@ -57,7 +57,7 @@ const ProjectLines = () => {
           // a website to help international students study in the US
         </span>
       </Line>
-      <Line>
+      <Line status="warning">
         {'        '}
         <span className="text-[#b8bb26]">
           "
