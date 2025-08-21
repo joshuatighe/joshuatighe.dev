@@ -1,14 +1,14 @@
-import Status from "@/app/ui/Status";
-import { ReactNode } from "react";
+import Status from '@/app/ui/Status';
+import { ReactNode } from 'react';
 
 const Line = ({
   children,
   number,
-  status = "none",
+  status = 'none',
 }: {
   children: ReactNode;
   number: string;
-  status?: "warning" | "error" | "none";
+  status?: 'warning' | 'error' | 'none';
 }) => {
   return (
     <div className="flex">

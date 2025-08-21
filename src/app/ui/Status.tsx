@@ -1,5 +1,5 @@
-const Status = ({ status }: { status: "warning" | "error" | "none" }) => {
-  if (status === "warning") {
+const Status = ({ status }: { status: 'warning' | 'error' | 'none' }) => {
+  if (status === 'warning') {
     return (
       <div className="w-6 flex-none text-center mr-4 text-[#fabd2f] bg-[#3c3836]">
         𝚫
@@ -7,7 +7,7 @@ const Status = ({ status }: { status: "warning" | "error" | "none" }) => {
     );
   }
 
-  if (status === "error") {
+  if (status === 'error') {
     return (
       <div className="w-6 flex-none text-center mr-4 text-[#fb4934] bg-[#3c3836]">
         ✘
@@ -15,7 +15,7 @@ const Status = ({ status }: { status: "warning" | "error" | "none" }) => {
     );
   }
 
-  if (status === "none") {
+  if (status === 'none') {
     return <div className="w-6 flex-none text-center mr-4 bg-[#3c3836]" />;
   }
 };

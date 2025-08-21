@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="bg-[#fbf1c7] text-[#282828] pl-5 pr-5 text-center">
         <Link href="https://www.linkedin.com/in/joshuatighe/" target="_blank">
           <Linkedin className="inline" />
-        </Link>{" "}
+        </Link>{' '}
         <Link href="https://github.com/joshuatighe" target="_blank">
           <Github className="inline" />
         </Link>

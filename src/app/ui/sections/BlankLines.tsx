@@ -1,4 +1,4 @@
-import BlankLine from "@/app/ui/BlankLine";
+import BlankLine from '@/app/ui/BlankLine';
 
 const BlankLines = ({ number }: { number: number }) => (
   <>

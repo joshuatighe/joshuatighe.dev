@@ -6,23 +6,23 @@ import {
   CloudRainWind,
   CloudSnow,
   Sun,
-} from "lucide-react";
+} from 'lucide-react';
 
 const WeatherIconHandler = ({ desc }: { desc: string }) => {
   switch (desc) {
-    case "thunderstorm":
+    case 'thunderstorm':
       return <CloudLightning className="inline" />;
-    case "drizzle":
+    case 'drizzle':
       return <CloudRainWind className="inline" />;
-    case "rain":
+    case 'rain':
       return <CloudRainWind className="inline" />;
-    case "snow":
+    case 'snow':
       return <CloudSnow className="inline" />;
-    case "atmosphere":
+    case 'atmosphere':
       return <CloudFog className="inline" />;
-    case "clear":
+    case 'clear':
       return <Sun className="inline" />;
-    case "clouds":
+    case 'clouds':
       return <Cloud className="inline" />;
     default:
       return <CircleHelp className="inline" />;

@@ -1,25 +1,25 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import Line from "@/app/ui/Line";
+import Line from '@/app/ui/Line';
 
 const ProjectLines = () => {
   return (
     <>
-      <Line number={"6"} status={"warning"}>
+      <Line number={'6'} status={'warning'}>
         <div>
-          and this is my{" "}
-          <span className="text-[#fb4934]">portfolio_website</span>() {"{"}
+          and this is my{' '}
+          <span className="text-[#fb4934]">portfolio_website</span>() {'{'}
         </div>
       </Line>
-      <Line number={"8"}>
+      <Line number={'8'}>
         <div>
-          {"    "}
-          ProjectList projects = {"{"}
+          {'    '}
+          ProjectList projects = {'{'}
         </div>
       </Line>
-      <Line number={"8"}>
+      <Line number={'8'}>
         <div>
-          {"        "}
+          {'        '}
           <span className="text-[#b8bb26]">
             "
             <Link
@@ -33,21 +33,21 @@ const ProjectLines = () => {
           </span>
           ,
           <span className="text-[#928374]">
-            {" "}
+            {' '}
             // game of life built using react components
           </span>
         </div>
       </Line>
-      <Line number={"8"}>
+      <Line number={'8'}>
         <div>
-          {"    "}
-          {"}"}
+          {'    '}
+          {'}'}
         </div>
       </Line>
-      <Line number={"8"}>
-        <div>{"}"}</div>
+      <Line number={'8'}>
+        <div>{'}'}</div>
       </Line>
-      <Line number={"9"}>
+      <Line number={'9'}>
         <></>
       </Line>
     </>

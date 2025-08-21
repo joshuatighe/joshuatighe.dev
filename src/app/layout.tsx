@@ -1,16 +1,16 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata } from 'next';
+import { JetBrains_Mono } from 'next/font/google';
+import './globals.css';
 
 const jetbrainsMono = JetBrains_Mono({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
   title: "hi, i'm joshua",
-  description: "a portfolio website",
+  description: 'a portfolio website',
 };
 
 export default function RootLayout({

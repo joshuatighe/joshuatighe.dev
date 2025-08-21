@@ -4,7 +4,7 @@ import {
   IntroLines,
   ProjectLines,
   WeatherLines,
-} from "@/app/ui/sections";
+} from '@/app/ui/sections';
 
 const Home = () => {
   return (
