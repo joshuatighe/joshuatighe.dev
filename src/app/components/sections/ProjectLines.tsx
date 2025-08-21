@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import Line from '@/app/components/Line';
+import { SiVim } from 'react-icons/si';
 
 const ProjectLines = () => {
   return (
@@ -73,7 +74,8 @@ const ProjectLines = () => {
         ,
         <span className="text-[#928374]">
           {' '}
-          // built using next.js and tailwind, styled to look like vim
+          // built using next.js and tailwind, styled to look like{' '}
+          <SiVim className="inline" />
         </span>
       </Line>
       <Line>
