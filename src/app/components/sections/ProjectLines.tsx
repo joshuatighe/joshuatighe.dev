@@ -34,9 +34,28 @@ const ProjectLines = () => {
           ,
           <span className="text-[#928374]">
             {' '}
-            // game of life built using react components
+            // game of life built using react
           </span>
         </div>
+      </Line>
+      <Line>
+        {'        '}
+        <span className="text-[#b8bb26]">
+          "
+          <Link
+            href="https://github.com/joshuatighe/intlbridge"
+            target="_blank"
+            className="underline hover:font-extrabold"
+          >
+            intlbridge
+          </Link>
+          "
+        </span>
+        ,
+        <span className="text-[#928374]">
+          {' '}
+          // a website to help international students study in the US
+        </span>
       </Line>
       <Line>
         <div>
@@ -45,7 +64,7 @@ const ProjectLines = () => {
         </div>
       </Line>
       <Line>
-        <div>{'}'}</div>
+        <div>{'};'}</div>
       </Line>
       <Line />
     </>
