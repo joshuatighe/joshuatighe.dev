@@ -80,11 +80,11 @@ const ProjectLines = () => {
       <Line>
         <div>
           {'    '}
-          {'}'}
+          {'};'}
         </div>
       </Line>
       <Line>
-        <div>{'};'}</div>
+        <div>{'}'}</div>
       </Line>
       <Line />
     </>
