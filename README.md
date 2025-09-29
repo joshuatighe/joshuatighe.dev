@@ -19,4 +19,4 @@ and deployed with [vercel](https://vercel.com/home)
 
 [mit](https://opensource.org/license/mit) license
 
-☘️ made with care by joshua tighe
+☘️ developed with care by joshua tighe
