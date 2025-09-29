@@ -8,7 +8,6 @@ const ProjectLines = () => {
     <>
       <Line>
         <div>
-          and this is my{' '}
           <span className="text-[#fb4934]">portfolio_website</span>() {'{'}
         </div>
       </Line>
