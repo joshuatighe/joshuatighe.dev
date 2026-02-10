@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import TerminalView from "../components/Terminal";
 ---
 
 <html lang="en">
@@ -12,16 +13,6 @@ import "../styles/global.css";
 		<title>joshuatighe.dev</title>
 	</head>
 	<body>
-		<p>under construction</p>
-		<p>see the repo for my old porfolio website <a href="https://github.com/joshuatighe/joshuatighe.dev-old" target="_blank">here</a></p>
-
-		<pre class="text-lg">
-gone fishin'
-               O  o
-          _\_   o
->('>   \\/  o\ .
-       //\___=
-          ''
-		</pre>
+		<TerminalView client:only="react" />
 	</body>
 </html>
