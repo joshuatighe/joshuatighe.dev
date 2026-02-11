@@ -1,1 +1,48 @@
+@import "@fontsource/geist-sans";
+@import "@fontsource/jetbrains-mono";
 @import "tailwindcss";
+
+@theme {
+  /* fonts */
+  --font-sans: "Geist Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* backgrounds */
+  --color-gruvbox-bg0_h: #1d2021;
+  --color-gruvbox-bg: #282828;
+  --color-gruvbox-bg0_s: #32302f;
+  --color-gruvbox-bg1: #3c3836;
+  --color-gruvbox-bg2: #504945;
+  --color-gruvbox-bg3: #665c54;
+  --color-gruvbox-bg4: #7c6f64;
+
+  /* foregrounds */
+  --color-gruvbox-fg: #ebdbb2;
+  --color-gruvbox-fg4: #a89984;
+  --color-gruvbox-fg3: #bdae93;
+  --color-gruvbox-fg2: #d5c4a1;
+  --color-gruvbox-fg1: #ebdbb2;
+  --color-gruvbox-fg0: #fbf1c7;
+
+  /* base (dim) colors */
+  --color-gruvbox-red-dim: #cc241d;
+  --color-gruvbox-green-dim: #98971a;
+  --color-gruvbox-yellow-dim: #d79921;
+  --color-gruvbox-blue-dim: #458588;
+  --color-gruvbox-purple-dim: #b16286;
+  --color-gruvbox-aqua-dim: #689d6a;
+  --color-gruvbox-gray-dim: #928374;
+
+  /* bright colors */
+  --color-gruvbox-red-bright: #fb4934;
+  --color-gruvbox-green-bright: #b8bb26;
+  --color-gruvbox-yellow-bright: #fabd2f;
+  --color-gruvbox-blue-bright: #83a598;
+  --color-gruvbox-purple-bright: #d3869b;
+  --color-gruvbox-aqua-bright: #8ec07c;
+  --color-gruvbox-gray: #a89984;
+
+  /* accent */
+  --color-gruvbox-orange-dim: #d65d0e;
+  --color-gruvbox-orange-bright: #fe8019;
+}
