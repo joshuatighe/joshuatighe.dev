@@ -1,17 +1,28 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>joshuatighe.dev</title>
-  </head>
-  <body class="bg-gruvbox-bg text-gruvbox-fg">
-    <h1 class="">joshuatighe.dev</h1>
-  </body>
-</html>
+<BaseLayout>
+  <!-- hero -->
+  <section class="flex flex-col gap-y-2">
+    <h1 class="text-3xl">hey there!</h1>
+    <p class="text-sm">this site is under construction</p>
+    <p class="mt-4 text-sm">
+      see the repo for my old portfolio website
+      <a
+        href="https://github.com/joshuatighe/joshuatighe.dev-old"
+        target="_blank"
+        class="text-gruvbox-aqua-bright hover:text-gruvbox-aqua-dim"
+      >
+        here
+      </a>
+    </p>
+  </section>
+
+  <!-- recent blog posts -->
+  <section></section>
+
+  <!-- about -->
+  <section></section>
+</BaseLayout>
