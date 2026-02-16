@@ -1,0 +1,19 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/global.css";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <div class="mb-6">
+    <h1 class="text-gruvbox-aqua-bright text-2xl font-bold">
+      {frontmatter.title}
+    </h1>
+    <p class="text-gruvbox-fg4 text-sm">
+      {frontmatter.pubDate.toString().slice(0, 10)}
+    </p>
+    <p class="gruv text-sm italic">{frontmatter.description}</p>
+  </div>
+  <slot />
+</BaseLayout>
