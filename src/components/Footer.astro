@@ -1,0 +1,29 @@
+---
+import { Copyright, Github, Linkedin } from "@lucide/astro";
+---
+
+<footer class="mt-auto">
+  <div class="mx-auto max-w-2xl px-3 py-3 sm:px-4 sm:py-4">
+    <div
+      class="text-gruvbox-fg2 flex items-center justify-between text-[10px] sm:text-xs"
+    >
+      <span class="flex items-center gap-1 sm:gap-1.5">
+        <Copyright size="10px" class="sm:size-3" />
+        2026 joshua tighe · built with astro
+      </span>
+
+      <ul class="flex gap-3 sm:gap-4">
+        <li>
+          <a href="https://github.com/joshuatighe" target="_blank">
+            <Github class="size-4 sm:size-5" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/joshuatighe/" target="_blank">
+            <Linkedin class="size-4 sm:size-5" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

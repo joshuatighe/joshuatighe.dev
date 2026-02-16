@@ -1,5 +1,6 @@
 ---
-import { Copyright, Github, Linkedin } from "@lucide/astro";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -15,21 +16,7 @@ import { Copyright, Github, Linkedin } from "@lucide/astro";
     class="bg-gruvbox-bg text-gruvbox-fg0 flex min-h-dvh flex-col font-mono"
   >
     <!-- nav -->
-    <nav class="fixed top-0 left-0 z-50 h-16 w-full">
-      <div
-        class="border-gruvbox-fg4 mx-auto flex h-full max-w-2xl items-center justify-between border-b px-4"
-      >
-        <span class="hover:text-gruvbox-aqua-bright font-extrabold">
-          jt<span class="text-gruvbox-aqua-bright">.</span>
-        </span>
-
-        <ul class="text-gruvbox-fg2 flex gap-6 text-sm">
-          <li><a href="/">blog</a></li>
-          <li><a href="/projects">projects</a></li>
-          <li><a href="/contact">about</a></li>
-        </ul>
-      </div>
-    </nav>
+    <Navigation />
 
     <!-- main -->
     <main class="flex-1 pt-24">
@@ -39,33 +26,6 @@ import { Copyright, Github, Linkedin } from "@lucide/astro";
     </main>
 
     <!-- footer -->
-    <footer class="mt-auto">
-      <div class="mx-auto max-w-2xl px-3 py-3 sm:px-4 sm:py-4">
-        <div
-          class="text-gruvbox-fg2 flex items-center justify-between text-[10px] sm:text-xs"
-        >
-          <span class="flex items-center gap-1 sm:gap-1.5">
-            <Copyright size="10px" class="sm:size-3" />
-            2026 joshua tighe · built with astro
-          </span>
-
-          <ul class="flex gap-3 sm:gap-4">
-            <li>
-              <a href="https://github.com/joshuatighe" target="_blank">
-                <Github class="size-4 sm:size-5" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/joshuatighe/"
-                target="_blank"
-              >
-                <Linkedin class="size-4 sm:size-5" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </body>
 </html>
