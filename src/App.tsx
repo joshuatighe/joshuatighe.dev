@@ -1,10 +1,22 @@
-import { Sparkles } from "lucide-react";
+import Background from "./components/Background";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Marquee from "./components/Marquee";
+import Nav from "./components/Nav";
+import Work from "./components/Work";
 
 function App() {
   return (
-    <div className="flex min-h-svh items-center justify-center">
-      <Sparkles className="size-6" />
-    </div>
+    <>
+      <Background />
+      <Nav />
+      <main>
+        <Hero />
+        <Marquee />
+        <Work />
+      </main>
+      <Footer />
+    </>
   );
 }
 
