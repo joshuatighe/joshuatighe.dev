@@ -22,7 +22,7 @@ function WorkCard({ item }: { item: WorkItem }) {
       rel="noreferrer"
       onMouseMove={handleMouseMove}
       style={{ "--glow": item.glow } as CSSProperties}
-      className="group relative block overflow-hidden rounded-2xl border border-line bg-panel/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-(--glow)/40"
+      className="group relative block h-full overflow-hidden rounded-2xl border border-line bg-panel/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-(--glow)/40"
     >
       {/* spotlight that follows the cursor inside the card */}
       <div
@@ -33,7 +33,7 @@ function WorkCard({ item }: { item: WorkItem }) {
             "radial-gradient(340px circle at var(--x, 50%) var(--y, 50%), color-mix(in oklab, var(--glow) 12%, transparent), transparent 65%)",
         }}
       />
-      <div className="relative">
+      <div className="relative flex h-full flex-col">
         <div className="flex items-center justify-between font-mono text-xs">
           <span className="text-(--glow)">{item.kind}</span>
           {item.period && <span className="text-muted">{item.period}</span>}
@@ -46,7 +46,7 @@ function WorkCard({ item }: { item: WorkItem }) {
           <ArrowUpRight className="mt-1 size-4 shrink-0 text-muted transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-(--glow)" />
         </div>
         <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-auto flex flex-wrap gap-2 pt-4">
           {item.tags.map((tag) => (
             <span
               key={tag}
@@ -64,25 +64,34 @@ function WorkCard({ item }: { item: WorkItem }) {
 function Work() {
   const { ref, visible } = useReveal<HTMLElement>();
 
+  // Paired cards share one equal row height; an odd card out spans the full
+  // width below them at its own height.
+  const pairedCount = workItems.length - (workItems.length % 2);
+
+  const renderCard = (item: WorkItem, i: number) => (
+    <div
+      key={`${item.title}-${item.org}`}
+      className={`transition-all duration-700 ease-out ${
+        visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+      }`}
+      style={{ transitionDelay: `${i * 120}ms` }}
+    >
+      <WorkCard item={item} />
+    </div>
+  );
+
   return (
     <section ref={ref} id="work" className="mx-auto max-w-4xl scroll-mt-14 px-6 py-28">
       <p className="font-mono text-sm text-frost">{"// experience"}</p>
       <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
         Where I've been building
       </h2>
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
-        {workItems.map((item, i) => (
-          <div
-            key={`${item.title}-${item.org}`}
-            className={`transition-all sm:odd:last:col-span-2 duration-700 ease-out ${
-              visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            }`}
-            style={{ transitionDelay: `${i * 120}ms` }}
-          >
-            <WorkCard item={item} />
-          </div>
-        ))}
+      <div className="mt-10 grid gap-4 sm:auto-rows-fr sm:grid-cols-2">
+        {workItems.slice(0, pairedCount).map(renderCard)}
       </div>
+      {pairedCount < workItems.length && (
+        <div className="mt-4">{renderCard(workItems[pairedCount], pairedCount)}</div>
+      )}
     </section>
   );
 }
