@@ -3,8 +3,11 @@ import { Sparkle } from "lucide-react";
 function Hero() {
   return (
     <section className="mx-auto flex min-h-svh max-w-4xl flex-col justify-center px-6 pt-14">
+      <p className="animate-rise font-mono text-sm text-frost">
+        {"// cs @ notre dame · dublin, ireland"}
+      </p>
       <h1
-        className="animate-rise font-display text-6xl font-extrabold tracking-tight sm:text-8xl"
+        className="mt-6 animate-rise font-display text-6xl font-extrabold tracking-tight sm:text-8xl"
         style={{ animationDelay: "80ms" }}
       >
         Joshua Tighe<span className="text-green">.</span>
@@ -41,7 +44,10 @@ function Hero() {
           <span className="text-green">❯</span>
           <span className="inline-flex w-[calc(11ch+0.55em)] items-center">
             <span className="animate-typing overflow-hidden whitespace-nowrap">see my work</span>
-            <span aria-hidden="true" className="h-4 w-[0.55em] shrink-0 animate-blink bg-frost/80" />
+            <span
+              aria-hidden="true"
+              className="h-4 w-[0.55em] shrink-0 animate-blink bg-frost/80"
+            />
           </span>
         </a>
       </div>
