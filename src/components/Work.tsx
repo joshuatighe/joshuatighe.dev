@@ -73,8 +73,8 @@ function Work() {
       <div className="mt-10 grid gap-4 sm:grid-cols-2">
         {workItems.map((item, i) => (
           <div
-            key={item.title}
-            className={`transition-all duration-700 ease-out ${
+            key={`${item.title}-${item.org}`}
+            className={`transition-all sm:odd:last:col-span-2 duration-700 ease-out ${
               visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
             style={{ transitionDelay: `${i * 120}ms` }}
